@@ -4,7 +4,7 @@
 #'
 #' @param x an \code{Image} or \code{\link{AnnotatedImage}} object
 #' @param file character, file name
-#' @param force logical(1), if \code{link} overwrite existing file
+#' @param force logical(1), if \code{TRUE} overwrite existing file
 #' @param pixelType character(1), data type to store pixel values
 #' @param littleEndian boolean(1), pixel data endianness
 #' @return File path to \code{file} is returned invisibly.

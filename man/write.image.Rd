@@ -11,7 +11,7 @@ write.image(x, file, force = FALSE, pixelType, littleEndian)
 
 \item{file}{character, file name}
 
-\item{force}{logical(1), if \code{link} overwrite existing file}
+\item{force}{logical(1), if \code{TRUE} overwrite existing file}
 
 \item{pixelType}{character(1), data type to store pixel values}
 

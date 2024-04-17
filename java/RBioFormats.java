@@ -342,8 +342,8 @@ public final class RBioFormats {
 
   public static void savePlanes(byte[] bytes, int imageCount) throws Exception {
     int planeSize = bytes.length / imageCount;
-    for (int i = 0; i < imageCount; i++) {
-      writer.saveBytes(i, Arrays.copyOf(bytes, planeSize));
+    for (int i = 0, index = 0; i < imageCount; i++) {
+      writer.saveBytes(i, Arrays.copyOfRange(bytes, i * planeSize, (i+1) * planeSize));
     }
   }
 
