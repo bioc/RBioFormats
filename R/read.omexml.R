@@ -14,7 +14,8 @@
 #' @seealso \code{\link{read.metadata}} for reading image metadata, \code{\link{read.image}} for reading image data
 #' @export
 read.omexml <- function(file, filter.metadata = FALSE, proprietary.metadata = TRUE) {
-  on.exit( .close(.getReader()) )
+  reader = .getReader()
+  on.exit( .close(reader) )
 
   .setupReader(file, filter.metadata, proprietary.metadata, omexml=TRUE)
 
